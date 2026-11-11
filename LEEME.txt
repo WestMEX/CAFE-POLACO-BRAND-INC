@@ -1,0 +1,1 @@
+Pon aquí tus fotos .jpg con los nombres indicados en js/main.js (principal.jpg, mayoreo.jpg, nosotros.jpg, equipo.jpg, local.jpg, preparacion.jpg y las de cada producto).
