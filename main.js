@@ -43,3 +43,6 @@ document.getElementById("f").addEventListener("submit",function(e){
  var g=function(i){return document.getElementById(i).value};
  window.open(wa("Hola, soy "+g("no")+" ("+g("te")+"). Motivo: "+g("mo")+". "+g("me")),"_blank");
 });
+var hb=document.querySelector(".hero-bg");
+if(hb&&!matchMedia("(prefers-reduced-motion:reduce)").matches){addEventListener("scroll",function(){hb.style.transform="translateY("+(scrollY*.25)+"px)"},{passive:true})}
+
