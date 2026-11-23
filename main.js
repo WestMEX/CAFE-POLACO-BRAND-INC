@@ -3,21 +3,21 @@ var NEGOCIO="CAFE POLACO BRAND INC";
 var WHATSAPP="525621754412"; // lada país + número, sin espacios ni +
 var MENU=[
  {cat:"Frappés y bebidas frías",items:[
-  {n:"Frappé de moka",d:"Café, chocolate y crema batida.",t:"16 oz",p:"$00",x:"Sabores del día: consulta",img:"img/frappe-moka.jpg"},
-  {n:"Frappé de vainilla",d:"Cremoso, suave y dulce.",t:"16 oz",p:"$00",img:"img/frappe-vainilla.jpg"},
-  {n:"Limonada o té frío",d:"Refrescante, sabor del día.",t:"16 oz",p:"$00",img:"img/limonada.jpg"}]},
+  {n:"Frappé de moka",d:"Café, chocolate y crema batida.",t:"600 ml",p:"$50",x:"Sabores del día: consulta",img:"img/frappe-moka.jpg"},
+  {n:"Frappé de vainilla",d:"Cremoso, suave y dulce.",t:"600ml",p:"$50",img:"img/frappe-vainilla.jpg"},
+  {n:"Limonada o té frío",d:"Refrescante, sabor del día.",t:"600 ml",p:"$50",img:"img/limonada.jpg"}]},
  {cat:"Café y bebidas calientes",items:[
-  {n:"Café americano",d:"Café recién preparado.",t:"12 oz",p:"$00",img:"img/americano.jpg"},
-  {n:"Capuchino",d:"Espresso con leche espumada.",t:"12 oz",p:"$00",img:"img/capuchino.jpg"},
-  {n:"Chocolate caliente",d:"Espeso y reconfortante.",t:"12 oz",p:"$00",img:"img/chocolate.jpg"}]},
+  {n:"Café americano",d:"Café recién preparado.",t:"500 ml",p:"$40",img:"img/americano.jpg"},
+  {n:"Capuchino",d:"Espresso con leche espumada.",t:"500 ml",p:"$40",img:"img/capuchino.jpg"},
+  {n:"Chocolate caliente",d:"Espeso y reconfortante.",t:"500 ml",p:"$50",img:"img/chocolate.jpg"}]},
  {cat:"Cupcakes y panqués",items:[
-  {n:"Cupcake decorado",d:"Esponjoso, con betún a elegir.",t:"Pieza o caja de 6",p:"$00",x:"Sabores del día: consulta",img:"img/cupcake.jpg"},
-  {n:"Panqué de naranja",d:"Tradicional y suave.",t:"Rebanada o entero",p:"$00",img:"img/panque-naranja.jpg"},
-  {n:"Panqué de elote",d:"Dulce y húmedo.",t:"Rebanada o entero",p:"$00",img:"img/panque-elote.jpg"}]},
+  {n:"Cupcake decorado",d:"Esponjoso,y suave.",t:"Pieza o caja de 6",p:"$90",x:"Sabores del día: consulta",img:"img/cupcake.jpg"},
+  {n:"Panqué de naranja",d:"Tradicional y suave.",t:"Por pieza ",p:"$15",img:"img/panque-naranja.jpg"},
+  {n:"Panqué de elote",d:"Dulce y húmedo.",t:"Por pieza",p:"$15",img:"img/panque-elote.jpg"}]},
  {cat:"Otros productos",items:[
-  {n:"Galletas",d:"Hechas en casa.",t:"Bolsa",p:"$00",img:"img/galletas.jpg"},
-  {n:"Postre del día",d:"Pregunta por el de hoy.",t:"Rebanada",p:"$00",x:"Sujeto a disponibilidad",img:"img/postre.jpg"}]}
-];
+  {n:"Galletas con chispas de chocolate",d:"Hechas en casa.",t:"Bolsa de 10 galletas",p:"$100",img:"img/galletas.jpg"},
+  {n:"Postre del día",d:"Pregunta por el de hoy.",t:"Rebanada",p:"$--",x:"Sujeto a disponibilidad",img:"img/postre.jpg"}]}
+]
 /* ==================================== */
 
 function wa(msg){return "https://wa.me/525621754412?text="+encodeURIComponent(msg)}
