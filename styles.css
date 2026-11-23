@@ -110,3 +110,24 @@ footer .logo{color:#f3e9dc;display:block;margin-bottom:10px}
 .sticky a{padding:16px 8px;text-align:center;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;background:var(--bg)}
 .sticky a:first-child{background:var(--dk);color:#f3e9dc}}
 
+/* ===== ANIMACIÓN DEL INICIO ===== */
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#faf6f0,#f0e0cd,#faf6f0);background-size:220% 220%;animation:fondo 20s ease-in-out infinite}
+@keyframes fondo{50%{background-position:100% 50%}}
+.hero .wrap{position:relative;z-index:2}
+.hero::before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(168,117,79,.28),transparent 65%);animation:orbe 14s ease-in-out infinite;z-index:1}
+@keyframes orbe{50%{transform:translate(-60px,80px) scale(1.15)}}
+.hero-bg{position:absolute;inset:-6% 0;z-index:0;will-change:transform}
+.hero-bg i{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:kb 27s infinite}
+.hero-bg i:nth-child(2){animation-delay:9s;animation-name:kb2}
+.hero-bg i:nth-child(3){animation-delay:18s}
+@keyframes kb{0%{opacity:0;transform:scale(1)}6%{opacity:.7}33%{opacity:.7}40%{opacity:0;transform:scale(1.15) translate(-2%,-1%)}100%{opacity:0;transform:scale(1.15)}}
+@keyframes kb2{0%{opacity:0;transform:scale(1.15) translate(2%,1%)}6%{opacity:.7}33%{opacity:.7}40%{opacity:0;transform:scale(1)}100%{opacity:0}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,246,240,.95) 0%,rgba(250,246,240,.78) 42%,rgba(250,246,240,.25) 100%)}
+.hero .eyebrow,.hero h1,.hero .lead,.hero .btns,.hero .tags{opacity:0;transform:translateY(24px);animation:sube 1s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1{animation-delay:.15s}.hero .lead{animation-delay:.3s}.hero .btns{animation-delay:.45s}.hero .tags{animation-delay:.6s}
+@keyframes sube{to{opacity:1;transform:none}}
+.hero .arch{animation:aparece 1.4s ease both,flota 7s ease-in-out 1.4s infinite}
+@keyframes aparece{from{opacity:0;clip-path:inset(100% 0 0 0)}to{opacity:1;clip-path:inset(0)}}
+@keyframes flota{50%{transform:translateY(-12px)}}
+@media(prefers-reduced-motion:reduce){.hero,.hero::before,.hero-bg i,.hero .arch{animation:none}.hero .eyebrow,.hero h1,.hero .lead,.hero .btns,.hero .tags{opacity:1;transform:none;animation:none}.hero-bg i:first-child{opacity:.5}}
+
