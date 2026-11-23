@@ -109,3 +109,4 @@ footer .logo{color:#f3e9dc;display:block;margin-bottom:10px}
 @media(max-width:700px){.sticky{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60;box-shadow:0 -4px 20px rgba(0,0,0,.12)}
 .sticky a{padding:16px 8px;text-align:center;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;background:var(--bg)}
 .sticky a:first-child{background:var(--dk);color:#f3e9dc}}
+
